@@ -3,9 +3,6 @@ import Profile from '@/assets/Profile.jpg'
 import Popper from "@/components/popover";
 import { DataSkills } from '@/data/data'
 import CardList from "@/components/CardList";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import './globals.css'
 
 export default function Home() {
@@ -89,7 +86,6 @@ export default function Home() {
               <p className="text-white text-3xl font-semibold">How To Contact Us</p>
               <div className="flex flex-col items-center gap-3 mt-10">
                 <a href="" className="w-72 h-10 border flex items-center px-4 rounded-full gap-4 card">
-                  <FontAwesomeIcon icon={faEnvelope} className="text-primary h-5 w-5" />
                   <p className="text-sm text-white">rifkyhilman1302@gmail.com</p>
                 </a>
                 <a 
@@ -97,7 +93,6 @@ export default function Home() {
                   href="https://www.linkedin.com/in/rifky-hilman-95ba57294/?trk=opento_sprofile_details" 
                   className="w-72 h-10 border flex items-center px-4 rounded-full gap-4 card"
                 >
-                  <FontAwesomeIcon icon={faLinkedin} className="text-primary h-5 w-5" />
                   <p className="text-sm text-white">rifkyhilman</p>
                 </a>
                 <a 
@@ -105,7 +100,6 @@ export default function Home() {
                   href="https://github.com/rifkyhilmann" 
                   className="w-72 h-10 border flex items-center px-4 rounded-full gap-4 card"
                 >
-                  <FontAwesomeIcon icon={faGithub} className="text-primary h-5 w-5" />
                   <p className="text-sm text-white">rifkyhilman</p>
                 </a>
               </div>
