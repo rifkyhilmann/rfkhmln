@@ -2,20 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes darkBackgroundAnimation {
+  0% {
+    background-color: #18181B;  /* Dark color */
+  }
+  50% {
+    background-color: #24242B;  /* Slightly lighter dark color */
+  }
+  100% {
+    background-color: #18181B;  /* Dark color */
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: #18181B;
 }
+
+.card:hover {
+  background-color: #41414d;
+}
+
+.content {
+  width: 90%;
+  max-width: 1000px;
+}
+
+@keyframes slideInFromSides {
+  0% {
+    transform: translateX(-100%); /* Starts from the left */
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0); /* Move to the center */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInFromSides {
+  animation: slideInFromSides 3s ease-in-out;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%); /* Starts from the right */
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0); /* Move to the center */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0); /* Finish at the center */
+    opacity: 1;
+  }
+}
+
+.animate-slideInFromRight {
+  animation: slideInFromRight 3s ease-in-out; /* Slow down the animation to 2 seconds */
+}
+
+
+
