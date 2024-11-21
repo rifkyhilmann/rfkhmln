@@ -4,6 +4,7 @@ import Popper from "@/components/popover";
 import { DataSkills } from '@/data/data'
 import CardList from "@/components/CardList";
 import './globals.css'
+import { Icons } from "@/assets/icons";
 
 export default function Home() {
     return (
@@ -86,6 +87,11 @@ export default function Home() {
               <p className="text-white text-3xl font-semibold">How To Contact Us</p>
               <div className="flex flex-col items-center gap-3 mt-10">
                 <a href="" className="w-72 h-10 border flex items-center px-4 rounded-full gap-4 card">
+                  <Image 
+                      src={Icons.Email}
+                      className="h-7 w-7"
+                      alt="Icons Email"
+                    />
                   <p className="text-sm text-white">rifkyhilman1302@gmail.com</p>
                 </a>
                 <a 
@@ -93,6 +99,11 @@ export default function Home() {
                   href="https://www.linkedin.com/in/rifky-hilman-95ba57294/?trk=opento_sprofile_details" 
                   className="w-72 h-10 border flex items-center px-4 rounded-full gap-4 card"
                 >
+                  <Image 
+                    src={Icons.Linkedin}
+                    className="h-7 w-7"
+                    alt="Icons Linkedin"
+                  />
                   <p className="text-sm text-white">rifkyhilman</p>
                 </a>
                 <a 
@@ -100,6 +111,11 @@ export default function Home() {
                   href="https://github.com/rifkyhilmann" 
                   className="w-72 h-10 border flex items-center px-4 rounded-full gap-4 card"
                 >
+                  <Image 
+                    src={Icons.GithubSign}
+                    className="h-7 w-7"
+                    alt="Icons Git"
+                  />
                   <p className="text-sm text-white">rifkyhilman</p>
                 </a>
               </div>

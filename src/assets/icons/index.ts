@@ -20,8 +20,14 @@ import IconsMongo from './MongoDB.png'
 import IconsElectron from './Electron.png'
 import IconsGithub from './github.png'
 import IconsReact from './React.png'
+import IconsLinkedin from './linkedin.png'
+import IconsGithubSIgn from './github-sign.png'
+import IconsEmail from './email.png'
 
 export const Icons = {
+    Linkedin : IconsLinkedin,
+    GithubSign : IconsGithubSIgn,
+    Email : IconsEmail,
     Html: IconsHtml,
     Css: IconsCss,
     Tailwind: IconsTailwind,
